@@ -19,9 +19,9 @@ export default function AssetsTable() {
   }, []);
 
   const columns = [
-    { title: "Название", dataIndex: "name" },
-    { title: "Цена, $", dataIndex: "price" },
-    { title: "Количество", dataIndex: "amount" },
+    { title: "Название", dataIndex: "name", sorter: (a, b) => a.name.localeCompare(b.name) },
+    { title: "Цена, $", dataIndex: "price", sorter: (a, b) => a.price - b.price },
+    { title: "Количество", dataIndex: "amount", sorter: (a, b) => a.amount - b.amount },
   ];
 
   const data = assets.map((asset) => ({
