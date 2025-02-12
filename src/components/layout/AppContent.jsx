@@ -29,7 +29,7 @@ export default function AppContent() {
         style={{
           display: "flex",
           justifyContent: "center",
-          height: "400px",
+          marginTop:"40px",
           color: "#fff",
           fontFamily: "Montserrat",
           alignItems: "center",
